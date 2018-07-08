@@ -31,3 +31,15 @@ CREATE TABLE `dw_ds_game_login_log` (
   `server_name` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE `dw_ds_web_login_log` (
+  `key_id` int(11) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `user_name` varchar(50) DEFAULT NULL,
+  `site_id` int(11) DEFAULT NULL,
+  `login_type` int(11) DEFAULT NULL,
+  `client_ip` varchar(50) DEFAULT NULL,
+  `login_time` datetime DEFAULT NULL,
+  `channel_info` varchar(50) DEFAULT NULL,
+  `server_name` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
